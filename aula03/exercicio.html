@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu Personagem de RPG</title>
+</head>
+<body>
+    <h1>Crie seu Personagem de RPG</h1>
+    <form>
+        <!-- Nome do Personagem -->
+        <label for="nome">Nome do Personagem:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Aragorn" value="Herói Anônimo" required>
+        <br><br>
+
+        <!-- Classe do Personagem -->
+        <label for="classe">Classe do Personagem:</label>
+        <select id="classe" name="classe">
+            <option value="Guerreiro" selected>Guerreiro</option>
+            <option value="Mago">Mago</option>
+            <option value="Arqueiro">Arqueiro</option>
+            <option value="Ladino">Ladino</option>
+            <option value="Curandeiro">Curandeiro</option>
+        </select>
+        <br><br>
+
+        <!-- Raça do Personagem -->
+        <label>Raça do Personagem:</label><br>
+        <input type="radio" id="humano" name="raca" value="Humano" checked>
+        <label for="humano">Humano</label><br>
+        <input type="radio" id="elfo" name="raca" value="Elfo">
+        <label for="elfo">Elfo</label><br>
+        <input type="radio" id="anao" name="raca" value="Anão">
+        <label for="anao">Anão</label><br>
+        <input type="radio" id="orc" name="raca" value="Orc">
+        <label for="orc">Orc</label><br>
+        <input type="radio" id="dragao" name="raca" value="Dragão">
+        <label for="dragao">Dragão</label>
+        <br><br>
+
+        <!-- Habilidades Especiais -->
+        <label>Habilidades Especiais:</label><br>
+        <input type="checkbox" id="forca" name="habilidades" value="Super Força">
+        <label for="forca">Super Força</label><br>
+        <input type="checkbox" id="magia" name="habilidades" value="Magia Elemental">
+        <label for="magia">Magia Elemental</label><br>
+        <input type="checkbox" id="furtividade" name="habilidades" value="Furtividade">
+        <label for="furtividade">Furtividade</label><br>
+        <input type="checkbox" id="cura" name="habilidades" value="Cura Divina">
+        <label for="cura">Cura Divina</label><br>
+        <input type="checkbox" id="resistencia" name="habilidades" value="Resistência">
+        <label for="resistencia">Resistência</label>
+        <br><br>
+
+        <!-- Equipamentos -->
+        <label for="equipamentos">Equipamentos:</label><br>
+        <textarea id="equipamentos" name="equipamentos" rows="4" cols="50">Espada, Escudo, Poção de Cura</textarea>
+        <br><br>
+
+        <!-- Data de Nascimento -->
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+        <br><br>
+
+        <!-- Nível de Poder -->
+        <label for="poder">Nível de Poder (1-100):</label>
+        <input type="number" id="poder" name="poder" min="1" max="100" value="50">
+        <br><br>
+
+        <!-- Foto do Personagem -->
+        <label for="foto">Foto do Personagem:</label>
+        <input type="file" id="foto" name="foto">
+        <br><br>
+
+        <!-- História do Personagem -->
+        <label for="historia">História do Personagem:</label><br>
+        <textarea id="historia" name="historia" rows="6" cols="50">Era uma vez um herói destemido...</textarea>
+        <br><br>
+
+        <!-- Botão de Ação -->
+        <button type="button" onclick="alert('Personagem criado com sucesso! 🎉 Prepare-se para a aventura!')">Criar Personagem</button>
+    </form>
+</body>
+</html>

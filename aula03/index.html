@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h2>Trabalhando com formulários</h2>
+
+    <form action="" method="dialog">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" 
+        placeholder="Digite seu nome" required value="Maria" size="40" maxlength="4">
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" 
+        placeholder="Digite seu e-mail" required readonly value="venore">
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" 
+        placeholder="Digite sua senha" required disabled>
+        <br><br>
+
+       <label for="time">Para qual time você torce?</label>  <br>
+
+        <input type="radio" name="time" value="Brasil" checked> Brasil<br>
+
+        <input type="radio" name="time" value="Alemanha"> Alemanha<br>
+
+        <input type="radio" name="time" value="Itália"> Itália<br>
+
+        <input type="radio" name="time" value="Outro"> Outro
+        <br><br>
+
+        Escolha seus esportes preferidos<br>
+
+        <input type="checkbox" name="esporte1" value="Futebol">Futebol<br>
+
+        <input type="checkbox" name="esporte2" value="Vôlei">Vôlei<br>
+
+        <input type="checkbox" name="esporte3" value="Basquete">Basquete<br>
+
+        <input type="checkbox" name="esporte4" value="Natação">Natação<br>
+        <br><br>
+
+        Data atual<br>
+
+        <input type="date" name="data"><br>
+
+        Arquivo<br>
+
+        <input type="file" name="arquivo"><br>
+
+        Selecione sua comida preferida:<br>
+
+        <select name="comidas">
+
+            <option value="Pizza">Pizza</option>
+
+            <option value="Pastel" selected >Pastel </option>
+
+            <option value="Churros">Churros</option>
+
+            <option value="Salada de frutas">Salada de frutas</option>
+
+        </select><br>
+
+        Deixe aqui sua mensagem de apoio:<br>
+
+        <textarea name="mensagem" rows="10" cols="30">
+
+            Rosas vermelhas florescem todo ano, se não pagar seu telefone vai entrar pelo cano.
+
+        </textarea><br>
+
+        <button type="button" onclick="alert('Olá Mundo!')">Clique em mim!</button>
+
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+    
+</body>
+</html>
